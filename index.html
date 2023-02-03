@@ -7,6 +7,9 @@
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://img.icons8.com/dusk/512/sign-up.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main">
@@ -19,27 +22,44 @@
             </div>
         </div>
         <div class="main-content">
-            <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="special-character">now</span> to get started.</h3>
-            <h3>You <span class="special-character">know</span> you want to</h3>
-            <form action="http://httpbin.org/post" method="post">
-                <label for="first_name">First Name</label>
-                <input type="text" name="first_name" id="first_name">
-                <label for="last_name">Last Name</label>
-                <input type="text" class="text" name="last_name" id="last_name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="phn-no">Phone Number</label>
-                <input type="tel" id="phn-no" name="phn-no">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" name="confirm-password" id="confirm-password">
-            </form>
-        </div>
-        <div class="main-footer">
-            <button class="btn">Sign Up</button>
-            <p>Already have an account? <a href="#">Sign In</a></p>
-        </div>
+            <div class="text-area">
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="special-character">now</span> to get started.</h2>
+                <h2>You <span class="special-character">know</span> you want to.</h2>
+            </div>
+            <div class="form-area">
+                <h1>Sign Up here!</h1>
+                <form action="http://httpbin.org/post" method="post">
+                    <div class="form-input">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="Bob"> 
+                    </div>
+                    <div class="form-input">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" class="text" name="last_name" id="last_name" placeholder="Giovanni">
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="bob.gio@email.com">
+                    </div>
+                    <div class="form-input">
+                        <label for="phn-no">Phone Number</label>
+                        <input type="tel" id="phn-no" name="phn-no" pattern="[0-9]{10}" placeholder="1234567891">
+                    </div>
+                    <div class="form-input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="form-input">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                    </div>
+                </form>
+            </div>
+            <div class="main-footer">
+                <button class="btn">Create Account</button>
+                <p>Already have an account? <a href="#">Sign In</a></p>
+            </div>
+        </div>  
     </div>
 </body>
 </html>

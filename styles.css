@@ -51,6 +51,20 @@ table {
 /* End of CSS Reset */
 
 /* Custom CSS */
+:root {
+    --main-color: #000000;
+    --secondary-color: #412728;
+    --tertiary-color: #7F4D3E;
+    --quaternary-color: #B87C4C;
+    --quinary-color: #E2B659;
+    --senary-color: #F9F871;
+
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 .main {
     display: flex;
     height: 100vh;
@@ -58,7 +72,8 @@ table {
 }
 
 .main-image{
-    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     background: url(assets/main-image.jpg);
@@ -70,12 +85,111 @@ table {
 }
 
 .main-image h1{
-    color: #fff;
+    color: var(--senary-color);
+    font-family: 'Lobster', cursive;
     font-size: 4rem;
     font-weight: 700;
 }
 
-.main-image .caption p {
+.main-image .caption{
     background-color: white;
-    width: 100%;
-    }
+    width:100%;
+    text-align: center;
+    opacity: .4;
+    padding: 1%
+}
+
+
+.main-content {
+    background-color: var(--senary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 67%;
+}
+
+.text-area {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:5%;
+}
+
+.text-area h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.text-area .special-character {
+    background-color: var(--quinary-color);
+    font-style: italic;
+}
+
+.form-area{
+    background-color: var(--quinary-color);
+    color: var(--secondary-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    bottom: 5rem;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.form-area h1{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-area form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    place-items: center;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 50%;
+}
+
+.form-input label {
+    /* text-transform: uppercase; */
+    font-weight: 700;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    position: relative;
+    bottom: 9rem;
+}
+
+.main-footer .btn {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color);
+    color: var(--senary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700; 
+}
+
+.main-footer .btn:hover {
+    /* background-color: rgb, green, blue); */
+}

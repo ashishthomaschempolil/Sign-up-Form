@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+}
+
+.main-image{
+    background-image: url("assets/main-image.jpg");
+    background-size: cover;
+    width: 30%;
+}

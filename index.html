@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/dusk/512/sign-up.png">
 </head>
 <body>
-    
+    <div class="main">
+        <div class="main-image">
+            <h1>Klickt</h1>
+        </div>
+        <div class="main-content">
+            <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="special-character">now</span> to get started.</h3>
+            <h3>You <span class="special-character">know</span> you want to</h3>
+            <form action="http://httpbin.org/post" method="post">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name">
+                <label for="last_name">Last Name</label>
+                <input type="text" class="text" name="last_name" id="last_name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="phn-no">Phone Number</label>
+                <input type="tel" id="phn-no" name="phn-no">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password">
+            </form>
+        </div>
+        <div class="main-footer">
+            <button class="btn">Sign Up</button>
+            <p>Already have an account? <a href="#">Sign In</a></p>
+        </div>
+    </div>
 </body>
 </html>

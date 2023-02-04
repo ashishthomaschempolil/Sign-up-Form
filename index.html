@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="script.js" defer></script>
     <div class="main">
         <div class="main-image">
             <h1>Klickt</h1>
@@ -28,37 +29,38 @@
             </div>
             <div class="form-area">
                 <h1>Sign Up here!</h1>
-                <form action="http://httpbin.org/post" method="post">
+                <form action="" method="post" id="myform">
                     <div class="form-input">
                         <label for="first_name">First Name</label>
-                        <input type="text" name="first_name" id="first_name" placeholder="Bob"> 
+                        <input required type="text" name="first_name" id="first_name" placeholder="Bob" autocomplete="given-name"> 
                     </div>
                     <div class="form-input">
                         <label for="last_name">Last Name</label>
-                        <input type="text" class="text" name="last_name" id="last_name" placeholder="Giovanni">
+                        <input required type="text" class="text" name="last_name" id="last_name" placeholder="Giovanni" autocomplete="family-name">
                     </div>
                     <div class="form-input">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="bob.gio@email.com">
+                        <input required type="email" name="email" id="email" placeholder="bob.gio@email.com" autocomplete="email">
                     </div>
                     <div class="form-input">
                         <label for="phn-no">Phone Number</label>
-                        <input type="tel" id="phn-no" name="phn-no" pattern="[0-9]{10}" placeholder="1234567891">
+                        <input required type="tel" id="phn-no" name="phn-no" minlength="10" maxlength="10" placeholder="10 characters" autocomplete="mobile">
                     </div>
                     <div class="form-input">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input required type="password" name="password" id="password" minlength="5" maxlength="20" placeholder="5-20 characters">
                     </div>
                     <div class="form-input">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
+                        <input required type="password" name="confirm-password" id="confirm-password">
                     </div>
                 </form>
             </div>
             <div class="main-footer">
-                <button class="btn">Create Account</button>
-                <p>Already have an account? <a href="#">Sign In</a></p>
+                <button type="submit" form="myform" id="submit-btn">Create Account</button>
+                <p>Already have an account? <a href="">Sign In</a></p>
             </div>
+            </form>
         </div>  
     </div>
 </body>
